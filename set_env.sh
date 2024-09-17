@@ -1,0 +1,5 @@
+export HERE=`pwd`
+export INSTALL_PREFIX=$HERE/install
+export PATH=$INSTALL_PREFIX/bin:$PATH
+export LD_LIBRARY_PATH=$INSTALL_PREFIX/lib:$LD_LIBRARY_PATH
+export SITE_NAME=local
