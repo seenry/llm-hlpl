@@ -42,6 +42,7 @@ mkdir -p build && cd build
 $INSTALL_PREFIX/bin/cmake $CMAKE_OPTIONS -DFLANG_LLVM_EXTENSIONS=ON ..
 make -j"$(nproc)" && make install
 
+cd $HERE
 unset HERE
 unset INSTALL_PREFIX
 unset CMAKE_VER

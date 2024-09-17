@@ -48,6 +48,7 @@ export LD_LIBRARY_PATH=$INSTALL_PREFIX/lib:$BASE_PATH
             FC=$INSTALL_PREFIX/bin/flang
 make -j"$(nproc)" && make install
 
+cd $HERE
 export LD_LIBRARY_PATH=$BASE_PATH
 unset BASE_PATH
 unset HERE
